@@ -18,11 +18,13 @@ class App extends Component {
       <div className="container">
         <BrowserRouter>
           <Header />
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/surveys" element={<Dashboard />} />
-            <Route path="/surveys/new" element={<SurveyNew />} />
-          </Routes>
+          <div>
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/surveys" element={<Dashboard />} />
+              <Route path="/surveys/new" element={<SurveyNew />} />
+            </Routes>
+          </div>
         </BrowserRouter>
       </div>
     );
